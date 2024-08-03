@@ -52,8 +52,8 @@ gcloud compute instance-groups managed create web-server-group \
         --template web-server-template \
         --region $REGION
  
-export FIREWALL="allow-http"
-gcloud compute firewall-rules create $FIREWALL \
+export FIREWALLN="allow-http"
+gcloud compute firewall-rules create $FIREWALLN \
         --allow tcp:80 \
         --network default
  
